@@ -11,14 +11,18 @@ Build a recommendation model using Surprise's SVD algorithm
 Predict user preferences for unrated movies
 Generate top-N recommendations for a given user
 Visualize user activity and rating distributions
+
 🧠 Key Components
 Reader: Defines the format and scale of the input rating data.
 Dataset: Converts pandas DataFrame into a Surprise-compatible dataset.
 SVD: Performs matrix factorization for collaborative filtering.
 top_recommendation(): Custom function to generate recommendations using predicted ratings.
+
 📊 Data Handling
 The system filters users and movies based on activity levels using quantile thresholds.
 Predictions are generated using Surprise’s .predict() method for each user-item pair.
+
+
 🔧 Requirements
 Python 3.x
 pandas
